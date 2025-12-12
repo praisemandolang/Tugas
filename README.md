@@ -32,50 +32,13 @@ python projekkelompok.py
 File projekkelompok.py harus berada di folder yang sama dengan repository yang kamu clone.
 
 # Dokumentasi Teknis
-Flowchart Sistem
-       ┌────────────────────┐
-       │      Mulai Game     │
-       └───────────┬────────┘
-                   │
-        ┌──────────▼──────────┐
-        │ Inisialisasi layar   │
-        │ + ular + makanan     │
-        └──────────┬──────────┘
-                   │
-        ┌──────────▼──────────┐
-        │ Input arah ular      │
-        └──────────┬──────────┘
-                   │
-     ┌─────────────▼─────────────┐
-     │ Update posisi + tampilan   │
-     └──────────┬──────────┬──────┘
-                │          │
-      ┌─────────▼───┐   ┌──▼───────────┐
-      │ Makan?       │   │ Tabrakan?    │
-      └───────┬──────┘   └─────┬────────┘
-              │                │
-   ┌──────────▼──────┐   ┌─────▼─────────┐
-   │ Tambah skor +    │   │   Game Over   │
-   │ tambah segmen    │   └─────┬─────────┘
-   └──────────┬───────┘         │
-              │                 │
-              └───────► Kembali ke loop
+![GAMBAR FLOWCHART](<Flowchart.drawio.png>)
 
-Penjelasan Teknis
-- Program menggunakan modul turtle untuk membuat tampilan serta objek ular dan makanan.
-- Input direction dikendalikan dengan event keyboard (wn.onkeypress()).
-- Program berjalan dalam loop utama, melakukan:
-    - Update posisi ular
-    - Deteksi tumbukan
-    - Deteksi makanan
-    - Pembaruan skor
-- Jika ular menabrak dinding atau tubuhnya sendiri, permainan berhenti dan layar Game Over ditampilkan.
+Flowchart di atas menggambarkan alur kerja program Snake Game mulai dari inisialisasi hingga permainan berakhir. Program dimulai dengan menyiapkan variabel, membuat window game, border, kepala ular, makanan, dan scoreboard. Setelah itu, tombol kontrol diaktifkan dan game masuk ke loop utama. Di dalam loop, program terus memeriksa apakah ular menabrak dinding, memakan makanan, atau menabrak tubuhnya sendiri. Jika ular memakan makanan, skor bertambah dan segmen baru ditambahkan. Jika terjadi tabrakan dengan dinding atau tubuh, permainan dihentikan dan pesan Game Over ditampilkan. Proses ini berlangsung terus hingga kondisi game over terpenuhi.
 
-# Daftar Kontributor
-Nama Lengkap	NIM	Link Akun GitHub	Peran dalam Dokumentasi
-Joy Naysha Lourdess Pua  250211060120  https://github.com/Joy-pua
-	Contributors
-Praise Honesty Mandolang  250211060123  https://github.com/praisemandolang
-	Project Maintainer
-Junior Palilingan Jacobis  250211060129  https://github.com/juniorjac496-max/jun
-	Contributors
+# Contributor
+Nama|NIM|Link Akun Github
+:---|:---|:---
+Joy Naysha Lourdess Pua|250211060120|<https://github.com/Joy-pua>
+Praise Honesty Mandolang|250211060123|<https://github.com/praisemandolang>
+Junior Palilingan Jacobis|250211060129|<https://github.com/juniorjac496-max/jun>
