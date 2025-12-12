@@ -18,7 +18,7 @@ Proyek ini dikembangkan sebagai bagian dari Tugas Proyek Kelompok – Version Co
 # Panduan Instalasi
 1. Clone Repository
 Pastikan perangkat sudah terpasang Git.
-git clone https://github.com/USERNAME/REPO-NAME.git
+git clone <https://github.com/praisemandolang/Tugas>
 2. Masuk ke direktori proyek
 cd REPO-NAME
 3. Instalasi Library (Jika diperlukan)
